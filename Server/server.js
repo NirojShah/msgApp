@@ -36,7 +36,7 @@ http.createServer((req,res)=>{
         }
         else if(req.url==='/msgjson'){
             let mongoDBFetch = async ()=>{
-                let client = await mongodb.MongoClient.connect("mongodb://127.0.0.1:27017/")
+                let client = await mongodb.MongoClient.connect("mongodb+srv://nirojshah1998:<nirajshah@1057984443>@cluster0.bskbypb.mongodb.net/?retryWrites=true&w=majority")
                 let db = await client.db("msgbox")
                 let coll = await db.collection("groupMsg")
                 let data = await coll.find({}).toArray()
@@ -46,7 +46,7 @@ http.createServer((req,res)=>{
         }
         else if(req.ur==='/clearchat'){
             let mongoDBclear = async ()=>{
-                let client = await mongodb.MongoClient.connect("mongodb://127.0.0.1:27017/")
+                let client = await mongodb.MongoClient.connect("mongodb+srv://nirojshah1998:<nirajshah@1057984443>@cluster0.bskbypb.mongodb.net/?retryWrites=true&w=majority")
                 let db = await client.db("msgbox")
                 db.dropCollection("groupMsg",(err)=>{
                     if(err)console.log(err)
