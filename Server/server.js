@@ -12,7 +12,7 @@ http.createServer((req,res)=>{
                 msg+=chunk
             })
             let mongoDB = async ()=>{
-                let client = await mongodb.MongoClient.connect("mongodb://127.0.0.1:27017/")
+                let client = await mongodb.MongoClient.connect("mongodb+srv://nirojshah1998:<nirajshah@1057984443>@cluster0.bskbypb.mongodb.net/?retryWrites=true&w=majority")
                 let db = await client.db("msgbox")
                 let coll = await db.collection("groupMsg")
                 let finalMsg = parse(msg)
