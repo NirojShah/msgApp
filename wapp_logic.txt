@@ -1,0 +1,15 @@
+import React from 'react'
+
+const Test = () => {
+  return (
+    <div style={{display:"flex",alignItems:"flex-end",justifyContent:"right",flexDirection:"column"}}>
+        <p style={{maxWidth:"400px",background:"aqua",paddingRight:"5px",wordWrap:"break-word"}}>a quick bronw fox jumps over hte laazyd go a quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hte <span style={{float:"right"}}>12.30</span></p>
+        <p style={{maxWidth:"400px",background:"aqua",paddingRight:"5px",wordWrap:"break-word"}}>a quick bronw  <span style={{float:"right",display:"inline-block",width:"50px",textAlign:"right"}}>12.30</span></p>
+        <p style={{maxWidth:"400px",background:"aqua",paddingRight:"5px",wordWrap:"break-word"}}>a quick bronw fox jumps over hte laazyd go a quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hte some<span style={{float:"right",display:"inline-block",width:"50px",textAlign:"right"}}>12.30</span></p>
+        <p style={{maxWidth:"400px",background:"aqua",paddingRight:"5px",wordWrap:"break-word"}}>a quick bronw fox jumps over hte laazyd go a quick bronw fox jumps over hte laazyd goa quick bronw fox jumps over hover hte laazyd goa quick bronw fox jumps over hte <span style={{float:"right",display:"inline-block",width:"50px",textAlign:"right"}}>12.30</span></p>
+        <p style={{maxWidth:"400px",background:"aqua",paddingRight:"5px",wordWrap:"break-word"}}>aquickbronwfoxjumpsoverhtelaazydgoaquickbronwfoxjumpsoverhtelaazydgoaquickbronwfoxjumpsoverhoverhtelaazydgoquickbronwfoxjupsoverhte<span style={{float:"right",display:"inline-block",width:"50px",textAlign:"right"}}>12.30</span></p>
+    </div>
+  )
+}
+
+export default Test
